@@ -21,20 +21,37 @@
     color: white;
 }
 
-
-footer, .jumbo-text, .navbar{
+.jumbo-text, .navbar{
     padding-top: 40px;
 }
 
-.fab {
-    color: black;
-    font-size: 2rem;
+/* Footer*/
+footer {
+    margin-top: 100px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
 }
 
 .copy {
-    color: black;
-    padding-top: 10px;
+    float: left;
+    margin-left: 25px;
 }
+.media {
+    float: right;
+   margin-right: 25px;
+}
+.fab {
+    
+    font-size: 1.5rem;
+}
+footer a {
+    color: #555;
+}
+
+// .copy {
+//     color: black;
+//     // padding-top: 10px;
+// }
 
 /* Slider */
 
