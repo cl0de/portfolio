@@ -1,11 +1,14 @@
 <%= provide(:title, "Welcome") %>
 <main>
-  <div class="jumbotron jumbotron-fluid text-white">
-    <div class="container text-right jumbo-text">
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container text-center jumbo-text">
       <h1 class="display-4">Welcome to my World!</h1>
-      <p class="lead">Welcome welcome! My name is Clode, I was born to code. This is my coding journey... </p>
+      <p class="lead line">My name is Clode, I am a full-stack developer. Checkout my projects </p>
       <p class="lead">
-        <a class="btn btn-lg view-work font-weight-lighter" href="#" role="button">View my Work</a>
+        <%= link_to "HTML/CSS", portfolio_path, class: "btn btn-lg view-work font-weight-lighter", role: "button" %> 
+        <a class="btn btn-lg view-work font-weight-lighter" href="#" role="button">JavaScript</a>
+        <a class="btn btn-lg view-work font-weight-lighter" href="#" role="button">Ruby on Rails</a>
+        <a class="btn btn-lg view-work font-weight-lighter" href="#" role="button">PHP</a>
       </p>
     </div>
   </div>

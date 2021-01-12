@@ -2,45 +2,42 @@
 
 <main>
     <div class="banner">
-        <ul>
-            <li>This is a slide.</li>
-            <li>This is another slide.</li>
-            <li>This is a final slide.</li>
-        </ul>
+        <%= image_tag("pages/hori.jpg", class: "img") %>
     </div>
 </main>
 <section>
 <div class="container">
-    <div class="card-deck">
-        <div class= "card">
-            <img src="#" class="card-img-top" alt="Image One">
+    <div class="row">
+        <div class="col-md-12">
+        <div class= "card border-light">
+            <%# <%= image_tag("pages/sample.jpg", class: "card-img-top img", alt: "List of books and prices")%> 
             <div class="card-body">
-                <h2>Title of the Screenshot one</h2>
-                <p>Lorem ipsum dolor sit amet. Qui totam excepturi et quisquam Quis non consequuntur 
-                provident et minus perspiciatis! Quo quasi natus eos omnis quibusdam et dolor ducimus in 
-                expedita odit eos repellendus necessitatibus est saepe dicta eum deserunt rerum.</p>
+                <h3>Sample App</h3>
+                <%# <p>Lorem ipsum dolor sit amet. Qui totam excepturi et quisquam Quis non consequuntur 
+                provident et minus perspiciatis! </p> %>
                 <%= link_to "Visit the site", "https://infinite-badlands-4746.herokuapp.com/", target: "_blank"%>
             </div>
         </div>
-        <div class= "card">
-            <img src="#" class="card-img-top" alt="Image Two">
+        </div>
+        <div class="col-md-12">
+        <div class= "card border-light">
+            <%# <%= image_tag("pages/Books2.jpg", class: "card-img-top img", alt: "List of books and prices")%> 
             <div class="card-body">
-        <h2>Title of the Screenshot one</h2>
-        <p>Lorem ipsum dolor sit amet. Qui totam excepturi et quisquam Quis non consequuntur 
-        provident et minus perspiciatis! Quo quasi natus eos omnis quibusdam et dolor ducimus in 
-        expedita odit eos repellendus necessitatibus est saepe dicta eum deserunt rerum.</p>
+        <h3>eBook Shop</h3>
+        
         <%= link_to "Visit the site", "https://glacial-river-5618.herokuapp.com/", target: "_blank"%>
         </div>
         </div>
-        <div class= "card">
-            <img src="#" class="card-img-top" alt="Image Three">
+        </div>
+        <div class="col-md-12">
+        <div class= "card border-light">
+            <%# <%= image_tag("pages/social.jpg", class: "card-img-top img", alt: "Signup page")%>
             <div class="card-body">
-        <h2>Title of the Screenshot one</h2>
-        <p>Lorem ipsum dolor sit amet. Qui totam excepturi et quisquam Quis non consequuntur 
-        provident et minus perspiciatis! Quo quasi natus eos omnis quibusdam et dolor ducimus in 
-        expedita odit eos repellendus necessitatibus est saepe dicta eum deserunt rerum.</p>
+        <h3>Mini Social Portal</h3>
+        
         <%= link_to "Visit the site", "https://whispering-tundra-3678.herokuapp.com/", target: "_blank" %>
             </div>
+        </div>
         </div>
     </div>
 </div>

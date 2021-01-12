@@ -1,20 +1,86 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
+* {
+    margin: 0;
+    padding: 0;
+}
 .jumbotron {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url("https://images.unsplash.com/photo-1607453902486-555434a0403d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80");
-    background-size: cover;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url("https://images.unsplash.com/photo-1607453902486-555434a0403d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80");
+    // background-size: cover;
     
     height: 600px;
 }
+.line {
+    line-height: 200%;
+}
+
+.container {
+    padding: 0;
+}
 
 .navbar {
-    background: none;
     padding-bottom: 40px; 
 }
 
+nav li {
+    font-size: 24px;
+    margin: 0 20px 0 0;
+}
+/* nav dropdown */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+h1.name {
+    font-size: 24px;
+}
 
 .view-work {
     background: rgba(0, 0, 0, 0.586);
@@ -48,13 +114,32 @@ footer a {
     color: #555;
 }
 
-// .copy {
-//     color: black;
-//     // padding-top: 10px;
-// }
+/* Pages */
 
-/* Slider */
+/** Portfolio **/
 
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
+.banner { 
+    position: relative; 
+    overflow: hidden; 
+    background: black; 
+    color: white; 
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: hsla(250, 16%, 15%, 0.2);
+}
+
+/** About **/
+
+.about {
+    margin-top: 80px;
+}
+.me {
+    width: 400px;
+}
+h2.ml-5 {
+    margin-left: 0 !important;
+}

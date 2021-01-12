@@ -13,35 +13,48 @@
 
   <body>
   <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav font-weight-bold">
-        <li class="nav-item">
-          
-          <%= link_to "Welcome", root_path, class: "nav-link active"%>
-        </li>
-        <li class="nav-item">
-          
-          <%= link_to "Portfolio", portfolio_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Blog", blog_path,  class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "About", about_path, class: "nav-link"  %>
-        </li>
-        <%# <li class="nav-item">
-          <%= link_to "Contact", '#', class: "nav-link" %>
-        <%# </li> %> 
-      </ul>
-    </div>
-    <a class="navbar-brand" href="#">Clode Uwamariya</a>
-    </div>
-</nav>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav font-weight-bold">
+            <li class="nav-item">
+              <%= link_to "Welcome", root_path, class: "nav-link active"%>
+            </li>
+            <li class="nav-item dropdown">
+              
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a> 
+              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-item"><a class="nav-link" href="#">HTML/CSS</a></li>
+                <li class="dropdown-item"><a class="nav-link" href="#">JavaScript</a></li>
+                <li class="dropdown-item dropright">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ruby on Rails</a>
+                    <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a  class="dropdown-item active nav-link" href="#">Example 1</a>
+                      <a  class="dropdown-item nav-link" href="#">Example 2</a>
+                      <a  class="dropdown-item nav-link" href="#">Example 3</a>
+                      <a class="dropdown-item nav-link" href="#">Example 4</a>
+                    </div>
+                </li>
+                <li class="dropdown-item"><a class="nav-link" href="#">PHP</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Blog", blog_path,  class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "About", about_path, class: "nav-link"  %>
+            </li> 
+          </ul>
+        </div>
+        <h1 class="navbar-brand name">Clode Uwamariya </h1>
+      </div>
+    </nav>
 </header>
     <%= yield %>
 <footer class="footer">
@@ -59,9 +72,18 @@
 </footer>
 
 <!-- Javascript and jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="javascripts/unslider-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/30a4250f2f.js" crossorigin="anonymous"></script>
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="//unslider.com/unslider.js"></script>
-<script src="/javascripts/scripts.js"></script>
+
+<script> 
+$(function() {
+      $('.banner').unslider();
+  });
+  
+</script>
+  
   </body>
 </html>
